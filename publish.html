@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Подать объявление | Y-FETISH</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="publish.css">
+
+<link rel="icon" href="img/logo.png">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+<div class="logo">
+<span class="red">Y</span>-FETISH
+</div>
+
+<nav class="nav">
+
+<a href="index.html">Главная</a>
+
+<a href="profile.html">Анкеты</a>
+
+</nav>
+
+<div class="menu-btn">
+☰
+</div>
+
+</header>
+
+<!-- ================= PAGE ================= -->
+
+<section class="publish-container">
+
+<h1>
+
+Подать объявление
+
+</h1>
+
+<p class="publish-text">
+
+Заполните анкету и после публикации она сразу появится на сайте.
+
+</p>
+
+<form id="publishForm">
+
+<!-- Фото -->
+
+<div class="form-group">
+
+<label>
+
+Фотографии
+
+</label>
+
+<input
+
+type="file"
+
+id="photos"
+
+accept="image/*"
+
+multiple
+
+>
+
+</div>
+
+<div id="preview">
+
+</div>
+
+<!-- Имя -->
+
+<div class="form-group">
+
+<label>
+
+Имя
+
+</label>
+
+<input
+
+type="text"
+
+id="title"
+
+placeholder="Введите имя"
+
+required
+
+>
+
+</div>
+
+<!-- Возраст -->
+
+<div class="form-group">
+
+<label>
+
+Возраст
+
+</label>
+
+<input
+
+type="number"
+
+id="age"
+
+min="18"
+
+max="99"
+
+required
+
+>
+
+</div>
+
+<!-- Пол -->
+
+<div class="form-group">
+
+<label>
+
+Пол
+
+</label>
+
+<select id="gender">
+
+<option>Девушка</option>
+
+<option>Парень</option>
+
+<option>Пара</option>
+
+<option>Транс</option>
+
+</select>
+
+</div>
+
+<!-- Страна -->
+
+<div class="form-group">
+
+<label>
+
+Страна
+
+</label>
+
+<input
+
+type="text"
+
+id="country"
+
+placeholder="Например Украина"
+
+required
+
+>
+
+</div>
+
+<!-- Город -->
+
+<div class="form-group">
+
+<label>
+
+Город
+
+</label>
+
+<input
+
+type="text"
+
+id="city"
+
+placeholder="Введите город"
+
+required
+
+>
+
+</div>
+
+<!-- Категория -->
+
+<div class="form-group">
+
+<label>
+
+Категория
+
+</label>
+
+<select id="goal">
+
+<option>BDSM</option>
+
+<option>Foot Fetish</option>
+
+<option>Femdom</option>
+
+<option>Findom</option>
+
+<option>Role Play</option>
+
+<option>Latex</option>
+
+<option>Cosplay</option>
+
+<option>Другое</option>
+
+</select>
+
+</div>
+
+<!-- Telegram -->
+
+<div class="form-group">
+
+<label>
+
+Telegram
+
+</label>
+
+<input
+
+type="text"
+
+id="telegram"
+
+placeholder="@username"
+
+required
+
+>
+
+</div>
+
+<!-- Описание -->
+
+<div class="form-group">
+
+<label>
+
+Описание
+
+</label>
+
+<textarea
+
+id="description"
+
+rows="8"
+
+placeholder="Расскажите о себе..."
+
+required
+
+></textarea>
+
+</div>
+
+<!-- Кнопка -->
+
+<button
+
+type="submit"
+
+class="publish-btn">
+
+Опубликовать анкету
+
+</button>
+
+</form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-links">
+
+<a href="privacy.html">
+
+Политика
+
+</a>
+
+<a href="terms.html">
+
+Правила
+
+</a>
+
+<a href="contacts.html">
+
+Контакты
+
+</a>
+
+</div>
+
+<p>
+
+© 2026 Y-FETISH
+
+</p>
+
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+<script src="js/supabase.js"></script>
+
+<script src="js/publish.js"></script>
+
+</body>
+
+</html>

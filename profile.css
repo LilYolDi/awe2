@@ -1,0 +1,382 @@
+/* =====================================
+   Y-FETISH
+   profile.css
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.profile-container{
+
+    max-width:1400px;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:1.1fr 0.9fr;
+
+    gap:35px;
+
+    padding:20px;
+
+}
+
+/* ===========================
+   ГАЛЕРЕЯ
+=========================== */
+
+.gallery{
+
+    background:#1b1b1b;
+
+    border:2px solid #ff0000;
+
+    border-radius:20px;
+
+    padding:20px;
+
+}
+
+#gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+#gallery img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#gallery img:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 0 20px rgba(255,0,0,.45);
+
+}
+
+/* ===========================
+   ИНФОРМАЦИЯ
+=========================== */
+
+.profile-info{
+
+    background:#1b1b1b;
+
+    border:2px solid #ff0000;
+
+    border-radius:20px;
+
+    padding:30px;
+
+}
+
+.profile-info h1{
+
+    color:#ff3333;
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+}
+
+.profile-meta{
+
+    margin-bottom:15px;
+
+    font-size:17px;
+
+    color:#d0d0d0;
+
+}
+
+.profile-meta b{
+
+    color:#ffffff;
+
+}
+
+#description{
+
+    margin-top:30px;
+
+    color:#cccccc;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+   TELEGRAM
+=========================== */
+
+.telegram-btn{
+
+    display:block;
+
+    width:100%;
+
+    margin-top:35px;
+
+    padding:18px;
+
+    text-align:center;
+
+    background:#ff0000;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.telegram-btn:hover{
+
+    background:#d60000;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+   ПОХОЖИЕ АНКЕТЫ
+=========================== */
+
+#similarAds{
+
+    max-width:1400px;
+
+    margin:20px auto 60px;
+
+    padding:0 20px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+#similarAds .ad-card{
+
+    background:#1b1b1b;
+
+    border:2px solid #2d2d2d;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+#similarAds .ad-card:hover{
+
+    border-color:#ff0000;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px rgba(255,0,0,.3);
+
+}
+
+#similarAds .ad-photo{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+}
+
+#similarAds .ad-info{
+
+    padding:20px;
+
+}
+
+#similarAds h2{
+
+    color:#ff4040;
+
+    margin-bottom:10px;
+
+}
+
+/* ===========================
+   КНОПКА
+=========================== */
+
+.view-btn{
+
+    display:block;
+
+    margin-top:20px;
+
+    background:#ff0000;
+
+    color:white;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.view-btn:hover{
+
+    background:#d60000;
+
+}
+
+/* ===========================
+   АНИМАЦИЯ
+=========================== */
+
+.profile-container{
+
+    animation:fadeIn .5s ease;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===========================
+   МОБИЛЬНАЯ ВЕРСИЯ
+=========================== */
+
+@media(max-width:900px){
+
+.profile-container{
+
+grid-template-columns:1fr;
+
+}
+
+#gallery{
+
+grid-template-columns:1fr;
+
+}
+
+#gallery img{
+
+height:250px;
+
+}
+
+.profile-info{
+
+padding:20px;
+
+}
+
+.profile-info h1{
+
+font-size:28px;
+
+}
+
+#similarAds{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.profile-container{
+
+padding:15px;
+
+}
+
+.gallery,
+
+.profile-info{
+
+padding:15px;
+
+}
+
+#gallery img{
+
+height:220px;
+
+}
+
+.profile-meta{
+
+font-size:15px;
+
+}
+
+.telegram-btn{
+
+font-size:16px;
+
+padding:16px;
+
+}
+
+}

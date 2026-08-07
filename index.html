@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Y-FETISH | Сайт знакомств</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="img/logo.png">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+<div class="logo">
+
+<span class="red">Y</span>-FETISH
+
+</div>
+
+<nav class="nav">
+
+<a href="index.html">Главная</a>
+
+<a href="search.html">Поиск</a>
+
+<a href="publish.html" class="publish-btn">
+Подать объявление
+</a>
+
+<a href="login.html">Войти</a>
+
+</nav>
+
+<div class="menu-btn">
+
+☰
+
+</div>
+
+</header>
+
+<!-- ================= MENU ================= -->
+
+<div class="side-menu">
+
+<div class="close-menu">
+
+✕
+
+</div>
+
+<a href="index.html">Главная</a>
+
+<a href="publish.html">Подать объявление</a>
+
+<a href="search.html">Поиск</a>
+
+<a href="favorites.html">Избранное</a>
+
+<a href="chat.html">Сообщения</a>
+
+<a href="account.html">Личный кабинет</a>
+
+<a href="settings.html">Настройки</a>
+
+<a href="about.html">О сайте</a>
+
+<a href="contacts.html">Контакты</a>
+
+</div>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<h1>
+
+Добро пожаловать в
+
+<span class="red">
+
+Y-FETISH
+
+</span>
+
+</h1>
+
+<p>
+
+Сайт знакомств для людей с различными интересами и предпочтениями.
+
+</p>
+
+<a href="publish.html" class="hero-btn">
+
+Подать объявление
+
+</a>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-box">
+
+<input
+
+type="text"
+
+id="search"
+
+placeholder="Поиск анкет..."
+
+>
+
+<select id="countryFilter">
+
+<option value="">
+
+Все страны
+
+</option>
+
+<option>
+
+Украина
+
+</option>
+
+<option>
+
+Польша
+
+</option>
+
+<option>
+
+Германия
+
+</option>
+
+</select>
+
+<select id="genderFilter">
+
+<option value="">
+
+Любой пол
+
+</option>
+
+<option>
+
+Девушка
+
+</option>
+
+<option>
+
+Парень
+
+</option>
+
+<option>
+
+Пара
+
+</option>
+
+<option>
+
+Транс
+
+</option>
+
+</select>
+
+<select id="sort">
+
+<option value="new">
+
+Новые
+
+</option>
+
+<option value="old">
+
+Старые
+
+</option>
+
+</select>
+
+</section>
+
+<!-- ================= VIP ================= -->
+
+<section>
+
+<h2 class="section-title">
+
+VIP анкеты
+
+</h2>
+
+<div id="vipContainer" class="ads-grid">
+
+</div>
+
+</section>
+
+<!-- ================= ADS ================= -->
+
+<section>
+
+<h2 class="section-title">
+
+Новые анкеты
+
+</h2>
+
+<div id="adsContainer">
+
+</div>
+
+</section>
+
+<!-- ================= TOP BUTTON ================= -->
+
+<button id="topButton">
+
+↑
+
+</button>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-links">
+
+<a href="privacy.html">
+
+Политика конфиденциальности
+
+</a>
+
+<a href="terms.html">
+
+Пользовательское соглашение
+
+</a>
+
+<a href="contacts.html">
+
+Контакты
+
+</a>
+
+</div>
+
+<p>
+
+© 2026 Y-FETISH
+
+</p>
+
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+<script src="js/supabase.js"></script>
+
+<script src="js/script.js"></script>
+
+<script src="js/load_ads.js"></script>
+
+</body>
+
+</html>
