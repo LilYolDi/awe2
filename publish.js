@@ -39,7 +39,10 @@ if (publishForm) {
 
             const userId = user ? user.id : null;
 
-            const { data, error } = await supabase
+            const {
+                data,
+                error
+            } = await window.ySupabase
                 .from("ads")
                 .insert({
                     user_id: userId,
