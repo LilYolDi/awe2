@@ -31,7 +31,7 @@ if (publishForm) {
             const category =
                 document.getElementById("category").value;
 
-            if (!title  !description  !city || !category) {
+           if (!title  !description  !city || !category) {
                 throw new Error("Заполните все поля");
             }
 
