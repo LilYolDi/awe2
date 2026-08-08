@@ -19,36 +19,18 @@ if (publishForm) {
 
         try {
 
-            const title = document
-                .getElementById("title")
-                .value
-                .trim();
+            const title = document.getElementById("title").value.trim();
+            const description = document.getElementById("description").value.trim();
+            const city = document.getElementById("city").value.trim();
+            const category = document.getElementById("category").value;
 
-            const description = document
-                .getElementById("description")
-                .value
-                .trim();
-
-            const city = document
-                .getElementById("city")
-                .value
-                .trim();
-
-            const category = document
-                .getElementById("category")
-                .value;
-
-            // Проверяем заполнение формы
             if (!title  !description  !city || !category) {
                 throw new Error("Заполните все поля");
             }
 
-            // Получаем пользователя, если он авторизован
             const user = await getCurrentUser();
-
             const userId = user ? user.id : null;
 
-            // Сохраняем объявление в Supabase
             const { data, error } = await window.ySupabase
                 .from("ads")
                 .insert({
